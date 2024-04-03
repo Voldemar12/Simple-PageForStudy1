@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш сайт</title>
+    <title>Sidebar Popup Window for Students</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding: 60px 20px;
+    }
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        background-color: #555;
+    }
+    .sidebar .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+    <h2>Welcome, Students!</h2>
+    <p>Explore educational resources:</p>
+    <ul>
+        <li><a href="#">Mathematics</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">History</a></li>
+    </ul>
+    <a href="#" class="close-btn" onclick="closeSidebar()">×</a>
+</div>
+
+<button onclick="openSidebar()">Open Sidebar</button>
+
+<script>
+function openSidebar() {
+    document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.width = "0";
+}
+</script>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 150px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        .services-section ul {
+            list-style-type: disc;
+            margin-right: 50px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <div class="logo">
+            <img src="logo1.jpg" alt="Логотип">
+        </div>
+        <li style="text-align: right;"><a href="#">Главная</a></li>
+        <li style="text-align: right;"><a href="lichnaya stranica.html">Личная страница</a></li>
+        <li style="text-align: right;"><a href="sekcii.html">Секции</a></li>
+        <li style="text-align: right;"><a href="uspevaemost.html">Успеваемость</a></li>
+    </ul>
+
+    <h1 id="home">Расписание</h1>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>День недели</th>
+            <th>1-й урок</th>
+            <th>2-й урок</th>
+            <th>3-й урок</th>
+            <th>4-й урок</th>
+            <th>5-й урок</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Русский язык</td>
+            <td>Физика</td>
+            <td>Литература</td>
+            <td>История</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Среда</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Четверг</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>Пятница</td>
+            <td>Английский язык</td>
+            <td>Химия</td>
+            <td>Биология</td>
+            <td>География</td>
+            <td>Информатика</td>
+        </tr>
+    </table>
+    <style>
+        .services-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<title>Форма авторизации</title>
+</head>
+<body>
+    <h2>Авторизация</h2>
+    <form action="/login" method="post">
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Войти">
+    </form>
+<body>
+    <div class="services-section">
+        <h2>Дневник:</h2>
+        <ul>
+            <div class="logo">
+                <img src="logo.png" alt="Логотип">
+            <li><a href="raspisanie.html">Электронный дневник</a></li>
+            <li><a href="zadaniya.html">Отображение домашних заданий и уроков</a></li>
+            <li><a href="svyaz.html">Возможность связи с учителями и администрацией</a></li>
+            <li><a href="ocenki.html">Управление оценками и успеваемостью</a></li>
+            <li><a href="informaciya.html">Для родителей</a></li>
+        </ul>
+    </div>
+</body>
+</html>
